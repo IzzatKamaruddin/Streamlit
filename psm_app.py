@@ -6,9 +6,14 @@ import pandas as pd
 import sklearn
 from sklearn.naive_bayes import GaussianNB
 
-df = pd.read_csv("Covid19_Prediction - ClassifactionBasedSpecies.csv")
-df.drop(df.columns[df.columns.str.contains('unnamed',case = False)],axis = 1, inplace = True)
+import pandas as pd
+
+url = "https://raw.githubusercontent.com/IzzatKamaruddin/Streamlit/master/Covid19_Prediction - ClassifactionBasedSpecies.csv"
+
+df = pd.read_csv(url)
+df.drop(df.columns[df.columns.str.contains('unnamed', case=False)], axis=1, inplace=True)
 df.head(500)
+
 
 df.count()
 
