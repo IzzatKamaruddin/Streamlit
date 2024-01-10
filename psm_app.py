@@ -43,7 +43,6 @@ print("Y test data count :\n", y_test.count())
 
 X_test.head()
 
-"""##Naive Bayes Classification & Prediction"""
 
 from sklearn.naive_bayes import GaussianNB
 NB_model = GaussianNB()
@@ -99,7 +98,7 @@ NB_model.predict([[0.999,1,0.720,0.840,0.450,0.0]])
 NB_model.predict([[0.973,1,0.000,0.746,0.226,0.0]])
 #PorcineVirus
 
-"""##**Prediction** and Classification using KNN Algorithm"""
+
 
 from sklearn.neighbors import KNeighborsClassifier
 knn = KNeighborsClassifier()
@@ -150,10 +149,7 @@ knn.predict([[0.973,1,0.000,0.746,0.226,0.0]])
 knn.predict([[0.54,1.000,0.000,0.619,0.246,0.000]])
 #PorcineCov
 
-"""#Start Streamlit Apps"""
 
-Commented out IPython magic to ensure Python compatibility.
-%%writefile myfirstapp.py
 import streamlit as st
 import numpy as np
 import pandas as pd
