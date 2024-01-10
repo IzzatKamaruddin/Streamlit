@@ -1,14 +1,12 @@
 # -*- coding: utf-8 -*-
 
-from google.colab import drive
-drive.mount('/content/drive')
 
 import streamlit as st
 import pandas as pd
 import sklearn
 from sklearn.naive_bayes import GaussianNB
 
-df = pd.read_csv("/content/drive/MyDrive/Colab Notebooks/Covid19_Prediction - ClassifactionBasedSpecies.csv")
+df = pd.read_csv("Covid19_Prediction - ClassifactionBasedSpecies.csv")
 df.drop(df.columns[df.columns.str.contains('unnamed',case = False)],axis = 1, inplace = True)
 df.head(500)
 
