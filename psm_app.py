@@ -31,3 +31,15 @@ user_input = user_input_features()
 
 st.subheader('User Input:')
 st.write(user_input)
+
+
+# Make prediction
+prediction, probability = predict_species(model, user_input.values)
+
+# Display the prediction and probability
+st.subheader('Prediction:')
+st.write(prediction)
+
+st.subheader('Probability:')
+st.write(probability)
+
