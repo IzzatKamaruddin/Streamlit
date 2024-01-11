@@ -1,7 +1,9 @@
 import numpy as np
 import pandas as pd
 import streamlit as st
+from model import load_model, predict_species
 
+model = load_model('model.sav')
 
 st.sidebar.header('User Input Parameters')
 
