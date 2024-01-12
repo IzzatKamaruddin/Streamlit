@@ -29,14 +29,14 @@ def main():
     Endoplasmic_Reticulum = st.sidebar.slider('Endoplasmic Reticulum', 0.0, 1.0, 0.5)
     Cytosol = st.sidebar.slider('Cytosol', 0.0, 1.0, 0.5)
 
-    data = [
+    data = {
         'Nucleus': Nucleus,
         'Exosome': Exosome,
         'Ribosome': Ribosome,
         'Membrane': Membrane,
         'Endoplasmic_Reticulum': Endoplasmic_Reticulum,
         'Cytosol': Cytosol
-    ]
+    }
 
 
    diagnosis = ''
