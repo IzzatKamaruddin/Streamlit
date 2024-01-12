@@ -1,7 +1,6 @@
 import numpy as np
 import pickle
 import streamlit as st
-
 loaded_model = pickle.load(open('model.sav', 'rb'))
 
 
