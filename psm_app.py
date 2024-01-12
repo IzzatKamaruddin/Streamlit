@@ -14,7 +14,7 @@ def predict_NB(input_data):
     prediction = loaded_model.predict(input_data_reshaped)
     print(prediction)
 
-    return The prediction result from your input is: , prediction[0]
+    return "The prediction result from your input is:" , prediction[0]
 
 
 st.sidebar.header('User Input Parameters')
